@@ -15,6 +15,6 @@ WORKDIR /discografia
 
 COPY --from=builder /discografia/build/libs/*.jar discografia-1.jar
 
-EXPOSE 443
+#EXPOSE 443
 
 CMD ["java", "-jar", "discografia-1.jar"]
